@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 
 import HomePage from './hompage-stuff/homePage.js';
-import resultsPage from './resultspage-stuff/resultsPage.js'
+import ResultsPage from './resultspage-stuff/resultsPage.js'
 
 import './css/bootstrap.css';
 
@@ -19,7 +19,7 @@ function App() {
       <div className="App">
         <Navigation />
         <Route exact path='/' component={HomePage}/>
-        <Route path='/:a([A-Za-z]+)' component={resultsPage}/>
+        <Route path='/:a([A-Za-z]+)' component={ResultsPage}/>
       </div>
     </HashRouter>
   );
