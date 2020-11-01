@@ -2,6 +2,8 @@ import React from 'react';
 import Navigation from './other_components/Navbar.js';
 
 import {
+  BrowserRouter as Router,
+  Switch,
   Route,
   HashRouter
 } from 'react-router-dom';
@@ -17,7 +19,7 @@ function App() {
       <div className="App">
         <Navigation />
         <Route exact path='/' component={HomePage}/>
-        <Route path='/results' component={resultsPage}/>
+        <Route path='/:a([A-Za-z]+)' component={resultsPage}/>
       </div>
     </HashRouter>
   );
